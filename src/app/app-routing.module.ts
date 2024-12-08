@@ -9,8 +9,7 @@ import { filmGuard } from './film.guard';
 import { RechercheParNomComponent } from './recherche-par-nom/recherche-par-nom.component';
 import { RechercheParGenreComponent } from './recherche-par-genre/recherche-par-genre.component';
 import { ListeGenresComponent } from './liste-genres/liste-genres.component';
-import { RegisterComponent } from './register/register.component';
-import { VerifEmailComponent } from './verif-email/verif-email.component';
+
 const routes: Routes = [
   {path: "films", component : FilmsComponent},
   {path: "add-film", component : AddFilmComponent,canActivate:[filmGuard]},
@@ -20,9 +19,7 @@ const routes: Routes = [
   {path: 'app-forbidden', component: ForbiddenComponent},
   {path: "rechercheParNom", component : RechercheParNomComponent},
   {path: "rechercheParGenre", component : RechercheParGenreComponent},
-  {path: "listeGenres", component : ListeGenresComponent},
-  {path:'register',component :RegisterComponent},
-  {path: 'verifEmail' , component:VerifEmailComponent }
+{path: "listeGenres", component : ListeGenresComponent},
 ];
 
 @NgModule({
